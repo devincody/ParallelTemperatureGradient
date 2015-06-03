@@ -30,7 +30,7 @@ def BC_Off(x_size, y_size, x_start, y_start, x_max, y_max): #boundary condition 
 if rank == 0:
 	x_max = 60 # number of columns (numb of points in the X direction)
 	y_max = 60 # number of rows (number of points in the Y direction)
-	t = 2000 # number of total iterations
+	t = 3000 # number of total iterations
 	parameters = np.empty(3, dtype=int)
 
 	parameters[0] = x_max
