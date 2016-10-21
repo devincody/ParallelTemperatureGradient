@@ -90,8 +90,18 @@ def averaging(matrix,x_size,y_size):
 				x,y = j+1,i
 				out[i][j] = .25*(matrix[y+1][x]+matrix[y-1][x]+matrix[y][x+1]+matrix[y][x-1])
 	return out
-
-
+# RANK 0:
+# 	000
+# 	0xx
+# 	000
+# RANK 1-4:
+# 	000
+# 	xxx
+# 	000
+# RANK 5:
+# 	000
+# 	xx0
+#	000
 
 c = 0
 for time in range(t):
